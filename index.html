@@ -8,23 +8,85 @@
 
     <body>
 
-        <!-- Pretty basic header for now -->
-        <header>
+        <!-- Might try to make this move with the scroll if we learn how to do that -->
+        <header id="top">
             <h1>TheseChinaThings</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#places">Places</a>
+                        <ul>
+                            <li><a href="#shanghai">Shanghai</a></li>
+                            <li><a href="#chengdu">Chengdu</a></li>
+                            <li><a href="#beijing">Beijing</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#foods">Foods</a>
+                        <ul>
+                            <li><a href="#peking-duck">Peking Duck</a></li>
+                            <li><a href="#kung-pao-chicken">Kung Pao Chicken</a></li>
+                            <li><a href="#jiaozi">Jiaozi</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </header>
 
         <main>
 
             <!-- Just a short little summary of China -->
-            <section>
-                <p>China, known officially as the People's Republic of China, is a vast and populous country in Eastern Asia; it has mountainous landscapes, iconic architecture, cutting-edge innovation, and one of the world's oldest living civilizations.</p>
+            <section id="about">
+                <h2>About</h2>
+                <figure>
+                    <img
+                        src="https://cdn.pixabay.com/photo/2013/07/13/14/16/china-162389_1280.png"
+                        alt="The national flag of China"
+                        width="300"
+                    >
+                    <figcaption>
+                        Flag provided by:
+                        <a href="https://pixabay.com/users/openclipart-vectors-30363/" target="_blank">
+                            @OpenClipart-Vectors, Pixabay
+                        </a>
+                    </figcaption>
+                </figure>
+                <p>
+                    China, known officially as the People's Republic of China,
+                    is a vast and populous country in Eastern Asia;
+                    it has mountainous landscapes, iconic architecture,
+                    cutting-edge innovation, and one of the world's oldest living civilizations.
+                </p>
             </section>
 
             <!-- My favourite places in China -->
-            <section>
+            <section id="places">
                 <h2>Places</h2>
+                <p>
+                    China is a vast, mountainous country with a rich and historic culture.
+                    Furthermore, it is built upon over 20+ provinces, 700+ cities,
+                    all across 7.6 <strong>million</strong> square kilometers.
+                    That being said, picking favourite cities is difficult, but here are some of mine:
+                </p>
                 <ol>
-                    <li>Shanghai (上海/shànghǎi)
+                    <li id="shanghai">
+                        <h3>Shanghai (上海/shànghǎi)</h3>
+                        <figure>
+                            <img
+                                src="./assets/shanghai.jpg"
+                                alt="A view of the Shanghai skyline from the Huangpu River"
+                                height="400"
+                            >
+                            <figcaption>
+                                Photo by:
+                                <a href="https://pixabay.com/users/john_appleseed-3191623/" target="_blank">
+                                    @John_Appleseed, Pixabay
+                                </a>
+                            </figcaption>
+                        </figure>
                         <ul>
                             <li>East</li>
                             <li>Fun fact: Shanghai is the most populous urban area</li>
@@ -32,7 +94,21 @@
                             <li>Rich culture & food</li>
                         </ul>
                     </li>
-                    <li>Chengdu (成都/chéngdū)
+                    <li id="chengdu">
+                        <h3>Chengdu (成都/chéngdū)</h3>
+                        <figure>
+                            <img
+                                src="./assets/chengdu.jpg"
+                                alt="A night shot of the Anshun bridge in Chengdu"
+                                width="400"
+                            >
+                            <figcaption>
+                                Photo by:
+                                <a href="https://www.pexels.com/@xiavil/" target="_blank">
+                                    Tetovált Kínai, Pexels
+                                </a>
+                            </figcaption>
+                        </figure>
                         <ul>
                             <li>Southwest</li>
                             <li>Fun fact: Chengdu is known historically as the "Land of Abundance"</li>
@@ -40,7 +116,21 @@
                             <li>The cradle, capital, and primary birthplace of Sichuan (also sometimes referred to as 'Szechuan') cuisine</li>
                         </ul>
                     </li>
-                    <li>Beijing (北京/běijīng)
+                    <li id="beijing">
+                        <h3>Beijing (北京/běijīng)</h3>
+                        <figure>
+                            <img
+                                src="./assets/beijing.jpg"
+                                alt="A warm image of the Beijing skyline at sunset"
+                                width="400"
+                            >
+                            <figcaption>
+                                Photo by:
+                                <a href="https://pixabay.com/users/jeremy888-8000982/" target="_blank">
+                                    @jeremy888, Pixabay
+                                </a>
+                            </figcaption>
+                        </figure>
                         <ul>
                             <li>North</li>
                             <li>Fun fact: the name literally translates to "Northern Capital" in English</li>
@@ -48,15 +138,36 @@
                             <li>Home of The Forbidden City (故宫/gùgōng)</li>
                         </ul>
                     </li>
-                    <li>And many more!</li>
                 </ol>
             </section>
 
             <!-- My favourite foods from China -->
-            <section>
+            <section id="foods">
                 <h2>Foods</h2>
+                <p>
+                    China is quite well known for its food,
+                    whether it's the traditional food of the local restaurants,
+                    or the westernized cuisine of Panda Express,
+                    there are options for absolutely everyone.
+                    There is no list that is long enough for all of the delicious Chinese dishes,
+                    but these are some of my favourite dishes that originate from various parts of China:
+                </p>
                 <ol>
-                    <li>Peking Duck (北京烤鸭/běijīng kǎoyā)
+                    <li id="peking-duck">
+                        <h3>Peking Duck (北京烤鸭/běijīng kǎoyā)</h3>
+                        <figure>
+                            <img
+                                src="./assets/peking-duck.jpg"
+                                alt="A closeup of sliced peking duck, garnished with fresh cilantro"
+                                width="400"
+                            >
+                            <figcaption>
+                                Photo by:
+                                <a href="https://pixabay.com/users/yangtao1009-14503417/" target="_blank">
+                                    @yangtao1009, Pixabay
+                                </a>
+                            </figcaption>
+                        </figure>
                         <ul>
                             <li>Fun fact: Although closely associated with Beijing, its earliest roots trace back earlier to Nanjing</li>
                             <li>Crispy, glassy, amber skin</li>
@@ -64,7 +175,21 @@
                             <li>One of China's most celebrated national dishes</li>
                         </ul>
                     </li>
-                    <li>Kung Pao Chicken (宫保鸡丁/gōngbǎo jīdīng)
+                    <li id="kung-pao-chicken">
+                        <h3>Kung Pao Chicken (宫保鸡丁/gōngbǎo jīdīng)</h3>
+                        <figure>
+                            <img
+                                src="./assets/kung-pao-chicken.jpg"
+                                alt="An elegant photo of Kung Pao Chicken, well presented on a square plate"
+                                width="400"
+                            >
+                            <figcaption>
+                                Photo by:
+                                <a href="https://www.pexels.com/@shootsaga/" target="_blank">
+                                    Anil Sharma, Pexels
+                                </a>
+                            </figcaption>
+                        </figure>
                         <ul>
                             <li>Fun fact: Named after Ding Baozhen, a Qing dynasty governor whose family name (丁/dīng) literally translates to "small cubes," making a delightful pun, as (鸡/jī) translates to "chicken" and diced chicken serves as the main ingredient of the dish</li>
                             <li>Spicy, sweet, sour, and savory</li>
@@ -72,7 +197,21 @@
                             <li>One of China's most classic dishes</li>
                         </ul>
                     </li>
-                    <li>Jiaozi (饺子/jiǎozi)
+                    <li id="jiaozi">
+                        <h3>Jiaozi (饺子/jiǎozi)</h3>
+                        <figure>
+                            <img
+                                src="./assets/jiaozi.jpg"
+                                alt="A bright image of jiaozi, chopsticks, and sauce"
+                                width="400"
+                            >
+                            <figcaption>
+                                Photo by:
+                                <a href="https://pixabay.com/users/xiuqilong-1915009/" target="_blank">
+                                    @xiuqilong, Pixabay
+                                </a>
+                            </figcaption>
+                        </figure>
                         <ul>
                             <li>Fun fact: Deliberately shaped to resemble traditional Chinese silver ingots (元宝/yuánbǎo)</li>
                             <li>Savory, juicy, and comforting</li>
@@ -80,13 +219,20 @@
                             <li>The quintessential comfort food of Northern China</li>
                         </ul>
                     </li>
-                    <li>There is no list long enough for delicious Chinese food!</li>
                 </ol>
             </section>
 
         </main>
 
         <footer>
+            <a href="#top">Back to top</a>
+            <!-- Neat "horizontal rule" - I kept it below the "back to top" button to keep the footer neat -->
+            <hr>
+            <p>
+                If you would like to learn more about China, check out the
+                <!-- This one doesn't open in a new tab -->
+                <a href="https://en.wikipedia.org/wiki/China">Wikipedia page</a>
+            </p>
             <p>TheseChinaThings 2026 - Built with China in mind, all the time</p>
         </footer>
 
