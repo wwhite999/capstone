@@ -1,5 +1,5 @@
 
-/* Body */
+/* Global */
 
 body
 {
@@ -11,7 +11,14 @@ body
     margin: 0px;
 }
 
-/* Header */
+a
+{
+    color: #0a70dd;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Logo */
 
 .logo
 {
@@ -32,20 +39,26 @@ body
 
 /* Nav */
 
-nav
+.navbar
 {
     background-color: #D73C37;
     color: #F9F9F8;
     padding: 1em;
 }
 
-nav a
+.navbar a
 {
     color: #F9F9F8;
 
     font-size: 1.25em;
+    font-weight: 500;
 
     text-decoration: none;
+}
+
+.navbar a:hover
+{
+    text-decoration: underline;
 }
 
 /* Main */
@@ -55,7 +68,17 @@ main
     margin: 2em;
 }
 
-article
+main p
+{
+    line-height: 2;
+}
+
+main h2
+{
+    text-align: center;
+}
+
+main article
 {
     padding: 1em;
     border-radius: 20px;
@@ -74,6 +97,7 @@ figure img
 figcaption
 {
     font-weight: lighter;
+    margin-top: 10px;
 }
 
 .indent
@@ -86,13 +110,32 @@ figcaption
     background-color: #8d222b;
     color: #F9F9F8;
 
-    font-size: 1.5rem;
+    font-size: 1rem;
 
-    padding: 0.25em;
+    padding: 0.5em;
 
     border-radius: 0.5em;
 
     text-decoration: none;
+}
+
+.button-link:hover
+{
+    text-decoration: underline;
+}
+
+.fun-fact
+{
+    color: #D73C37;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+/* List except in nav bar */
+
+main li
+{
+    line-height: 2;
 }
 
 /* Footer */
@@ -101,7 +144,7 @@ footer
 {
     background-color: #D73C37;
     color: #F9F9F8;
-    padding: 1em;
+    /* padding: 1em; */
 }
 
 footer hr
@@ -109,8 +152,22 @@ footer hr
     margin: 1em;
 }
 
+#button-container
+{
+    padding: 1em;
+}
+
+#button-container a
+{
+    font-weight: 400;
+}
+
 #attribution
 {
+    background-color: #151515;
     font-weight: lighter;
     font-style: italic;
+    padding: 0.25em;
+    text-align: center;
+    line-height: 1;
 }
