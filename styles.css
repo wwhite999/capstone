@@ -1,14 +1,25 @@
 
 /* Global */
 
+html
+{
+    scroll-behavior: smooth;
+}
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
 body
 {
     background-color: #F8F0E3;
     color: #2B2B2B;
 
     font-family: "Rubik", Tahoma, Verdana, sans-serif;
-
-    margin: 0px;
 }
 
 a
@@ -25,6 +36,7 @@ a
     display: flex;
     align-items: center;
     gap: 12px;
+    margin: 1em;
 }
 
 .logo img
@@ -32,18 +44,23 @@ a
     border: 1px solid white;
 }
 
-.logo h1
-{
-    margin: 0px;
-}
-
 /* Nav */
+
+header
+{
+    width: 100%;
+}
 
 .navbar
 {
     background-color: #D73C37;
     color: #F9F9F8;
     padding: 1em;
+}
+
+.navbar ul
+{
+    margin: 1em;
 }
 
 .navbar a
@@ -53,11 +70,29 @@ a
     font-size: 1.25em;
     font-weight: 500;
 
+    height: 100%;
+
     text-decoration: none;
 }
 
-.navbar a:hover
+.nav-list
 {
+    list-style: none;
+}
+
+.nav-list hr
+{
+    margin: 1em;
+}
+
+.nav-list li
+{
+    margin-left: 10px;
+}
+
+.nav-list a:hover
+{
+    display: block;
     text-decoration: underline;
 }
 
@@ -65,7 +100,8 @@ a
 
 main
 {
-    margin: 2em;
+    margin: 2em auto;
+    width: 80%;
 }
 
 main p
@@ -80,8 +116,17 @@ main h2
 
 main article
 {
-    padding: 1em;
-    border-radius: 20px;
+    margin: 1em;
+}
+
+article figure
+{
+    margin: 2em;
+}
+
+main hr
+{
+    margin: 2em;
 }
 
 figure img
@@ -100,9 +145,10 @@ figcaption
     margin-top: 10px;
 }
 
-.indent
+.info-text
 {
     text-indent: 2em;
+    margin: 1em;
 }
 
 .button-link
@@ -121,14 +167,24 @@ figcaption
 
 .button-link:hover
 {
-    text-decoration: underline;
+    background-color: #c92936;
 }
 
 .fun-fact
 {
-    color: #D73C37;
+    color: #FF5E00;
     font-weight: 500;
     font-size: 1.2em;
+}
+
+.art-text h3
+{
+    margin-bottom: 20px;
+}
+
+.art-text li
+{
+    margin-left: 10px;
 }
 
 /* List except in nav bar */
@@ -144,7 +200,7 @@ footer
 {
     background-color: #D73C37;
     color: #F9F9F8;
-    /* padding: 1em; */
+    width: 100%;
 }
 
 footer hr
@@ -155,6 +211,8 @@ footer hr
 #button-container
 {
     padding: 1em;
+    border-top: 5px dotted #FF5E00;
+    border-bottom: 5px dotted #9e3a00;
 }
 
 #button-container a
@@ -162,12 +220,43 @@ footer hr
     font-weight: 400;
 }
 
+#source-logos
+{
+    height: 40px;
+}
+
+#source-logos img
+{
+    height: 90%;
+    margin: 0 1em;
+}
+
 #attribution
 {
     background-color: #151515;
     font-weight: lighter;
     font-style: italic;
-    padding: 0.25em;
     text-align: center;
+    padding: 1em;
     line-height: 1;
+}
+
+#attribution hr
+{
+    /*
+        I looked it up and this seems to be the only
+        method of changing the colour of the divider
+    */
+    border: none;
+    border-top: 1px solid #303030; 
+}
+
+.attribution-text
+{
+    color: #606060;
+}
+
+.attribution-text p
+{
+    margin: 20px 10px;
 }

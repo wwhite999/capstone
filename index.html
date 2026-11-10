@@ -29,22 +29,20 @@
                     >
                     <h1>ChinaSpace</h1>
                 </div>
-                <hr>
-                <ul>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
+                <ul class="nav-list">
+                    <hr>
+                    <li><a href="#about">About</a></li>
+                    <li class="dropdown">
                         <a href="#places">Places</a>
-                        <ul>
+                        <ul class="dropdown-menu">
                             <li><a href="#shanghai">Shanghai</a></li>
                             <li><a href="#chengdu">Chengdu</a></li>
                             <li><a href="#beijing">Beijing</a></li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="dropdown">
                         <a href="#foods">Foods</a>
-                        <ul>
+                        <ul class="dropdown-menu">
                             <li><a href="#peking-duck">Peking Duck</a></li>
                             <li><a href="#kung-pao-chicken">Kung Pao Chicken</a></li>
                             <li><a href="#jiaozi">Jiaozi</a></li>
@@ -59,13 +57,13 @@
             <!-- Just a short little summary of China -->
             <section id="about">
                 <h2>About</h2>
-                <p class="indent">
+                <p class="info-text">
                     China, known officially as the <strong>People's Republic of China</strong>,
                     is a vast and populous country in Eastern Asia;
                     it has mountainous landscapes, iconic architecture,
                     cutting-edge innovation, and one of the world's oldest living civilizations.
                 </p>
-                <p class="indent">
+                <p class="info-text">
                     This website was created to cover a select few of the things that
                     <strong>make China great</strong>. 
                 </p>
@@ -73,8 +71,9 @@
 
             <!-- My favourite places in China -->
             <section id="places">
+                <hr>
                 <h2>Places</h2>
-                <p class="indent">
+                <p class="info-text">
                     China is mountainous, full of rich and historic culture, and is
                     built upon <b>20+ provinces</b>,
                     <b>700+ cities</b>, all across <b>7.6 million</b> square kilometers.
@@ -83,80 +82,87 @@
                 <ol>
                     <li id="shanghai">
                         <article>
-                            <h3>Shanghai <i>(上海/shànghǎi)</i></h3>
-                            <ul>
-                                <li><span class="fun-fact">Fun Fact:</span> Shanghai is the most populous urban area</li>
-                                <li>East</li>
-                                <li>Highly-developed major global financial center</li>
-                                <li>Rich culture & food</li>
-                            </ul>
+                            <div class="art-text">
+                                <h3>Shanghai <i>(上海/shànghǎi)</i></h3>
+                                <ul>
+                                    <li><span class="fun-fact">Fun Fact:</span> Shanghai is the most populous urban area</li>
+                                    <li>East</li>
+                                    <li>Highly-developed major global financial center</li>
+                                    <li>Rich culture & food</li>
+                                </ul>
+                            </div>
+                            <figure class="art-image">
+                                <img
+                                    src="./assets/shanghai.jpg"
+                                    alt="A view of the Shanghai skyline from the Huangpu River"
+                                >
+                                <figcaption>
+                                    Photo by:
+                                    <a href="https://pixabay.com/users/john_appleseed-3191623/" target="_blank">
+                                        @John_Appleseed, Pixabay
+                                    </a>
+                                </figcaption>
+                            </figure>
                         </article>
-                        <figure>
-                            <img
-                                src="./assets/shanghai.jpg"
-                                alt="A view of the Shanghai skyline from the Huangpu River"
-                            >
-                            <figcaption>
-                                Photo by:
-                                <a href="https://pixabay.com/users/john_appleseed-3191623/" target="_blank">
-                                    @John_Appleseed, Pixabay
-                                </a>
-                            </figcaption>
-                        </figure>
                     </li>
                     <li id="chengdu">
                         <article>
-                            <h3>Chengdu <i>(成都/chéngdū)</i></h3>
-                            <ul>
-                                <li><span class="fun-fact">Fun fact:</span> Chengdu is known historically as the <em>"Land of Abundance"</em></li>
-                                <li>Southwest</li>
-                                <li>Capital city of Sichuan Province (四川省/sìchuān shěng)</li>
-                                <li>The capital and primary birthplace of Sichuan (also sometimes referred to as 'Szechuan') cuisine</li>
-                            </ul>
+                            <div class="art-text">
+                                <h3>Chengdu <i>(成都/chéngdū)</i></h3>
+                                <ul>
+                                    <li><span class="fun-fact">Fun fact:</span> Chengdu is known historically as the <em>"Land of Abundance"</em></li>
+                                    <li>Southwest</li>
+                                    <li>Capital city of Sichuan Province (四川省/sìchuān shěng)</li>
+                                    <li>The capital and primary birthplace of Sichuan (also sometimes referred to as 'Szechuan') cuisine</li>
+                                </ul>
+                            </div>
+                            <figure class="art-image">
+                                <img
+                                    src="./assets/chengdu.jpg"
+                                    alt="A night shot of the Anshun bridge in Chengdu"
+                                >
+                                <figcaption>
+                                    Photo by:
+                                    <a href="https://www.pexels.com/@xiavil/" target="_blank">
+                                        Tetovált Kínai, Pexels
+                                    </a>
+                                </figcaption>
+                            </figure>
                         </article>
-                        <figure>
-                            <img
-                                src="./assets/chengdu.jpg"
-                                alt="A night shot of the Anshun bridge in Chengdu"
-                            >
-                            <figcaption>
-                                Photo by:
-                                <a href="https://www.pexels.com/@xiavil/" target="_blank">
-                                    Tetovált Kínai, Pexels
-                                </a>
-                            </figcaption>
-                        </figure>
                     </li>
                     <li id="beijing">
                         <article>
-                            <h3>Beijing <i>(北京/běijīng)</i></h3>
-                            <ul>
-                                <li><span class="fun-fact">Fun fact:</span> the name literally translates to <em>"Northern Captial"</em> in English</li>
-                                <li>North</li>
-                                <li>China's policitical, cultural, technological hub.</li>
-                                <li>Home of The Forbidden City (故宫/gùgōng)</li>
-                            </ul>
+                            <div class="art-text">
+                                <h3>Beijing <i>(北京/běijīng)</i></h3>
+                                <ul>
+                                    <li><span class="fun-fact">Fun fact:</span> the name literally translates to <em>"Northern Captial"</em> in English</li>
+                                    <li>North</li>
+                                    <li>China's policitical, cultural, technological hub.</li>
+                                    <li>Home of The Forbidden City (故宫/gùgōng)</li>
+                                </ul>
+                            </div>
+                            <figure class="art-image">
+                                <img
+                                    src="./assets/beijing.jpg"
+                                    alt="A warm image of the Beijing skyline at sunset"
+                                >
+                                <figcaption>
+                                    Photo by:
+                                    <a href="https://pixabay.com/users/jeremy888-8000982/" target="_blank">
+                                        @jeremy888, Pixabay
+                                    </a>
+                                </figcaption>
+                            </figure>
                         </article>
-                        <figure>
-                            <img
-                                src="./assets/beijing.jpg"
-                                alt="A warm image of the Beijing skyline at sunset"
-                            >
-                            <figcaption>
-                                Photo by:
-                                <a href="https://pixabay.com/users/jeremy888-8000982/" target="_blank">
-                                    @jeremy888, Pixabay
-                                </a>
-                            </figcaption>
-                        </figure>
                     </li>
                 </ol>
             </section>
 
             <!-- My favourite foods from China -->
             <section id="foods">
+                <hr>
                 <h2>Foods</h2>
-                <p class="indent">
+                <p class="info-text">
                     China is quite well known for its food,
                     whether it's the traditional food of the local restaurants,
                     or the westernized cuisine of Panda Express,
@@ -167,78 +173,84 @@
                 <ol>
                     <li id="peking-duck">
                         <article>
-                            <h3>Peking Duck <i>(北京烤鸭/běijīng kǎoyā)</i></h3>
-                            <ul>
-                                <li><span class="fun-fact">Fun fact:</span> Although closely associated with the northern city of Beijing, its earliest roots trace back earlier to the eastern city of <em>Nanjing</em></li>
-                                <li>Crispy, glassy, amber skin</li>
-                                <li>Delicious, tender meat</li>
-                                <li>One of China's most celebrated national dishes</li>
-                            </ul>
+                            <div class="art-text">
+                                <h3>Peking Duck <i>(北京烤鸭/běijīng kǎoyā)</i></h3>
+                                <ul>
+                                    <li><span class="fun-fact">Fun fact:</span> Although closely associated with the northern city of Beijing, its earliest roots trace back earlier to the eastern city of <em>Nanjing</em></li>
+                                    <li>Crispy, glassy, amber skin</li>
+                                    <li>Delicious, tender meat</li>
+                                    <li>One of China's most celebrated national dishes</li>
+                                </ul>
+                            </div>
+                            <figure class="art-image">
+                                <img
+                                    src="./assets/peking-duck.jpg"
+                                    alt="A closeup of sliced peking duck, garnished with fresh cilantro"
+                                >
+                                <figcaption>
+                                    Photo by:
+                                    <a href="https://pixabay.com/users/yangtao1009-14503417/" target="_blank">
+                                        @yangtao1009, Pixabay
+                                    </a>
+                                </figcaption>
+                            </figure>
                         </article>
-                        <figure>
-                            <img
-                                src="./assets/peking-duck.jpg"
-                                alt="A closeup of sliced peking duck, garnished with fresh cilantro"
-                            >
-                            <figcaption>
-                                Photo by:
-                                <a href="https://pixabay.com/users/yangtao1009-14503417/" target="_blank">
-                                    @yangtao1009, Pixabay
-                                </a>
-                            </figcaption>
-                        </figure>
                     </li>
                     <li id="kung-pao-chicken">
                         <article>
-                            <h3>Kung Pao Chicken <i>(宫保鸡丁/gōngbǎo jīdīng)</i></h3>
-                            <ul>
-                                <li>
-                                    <span class="fun-fact">Fun fact:</span> Named after
-                                    <em>Ding Baozhen</em>, a Qing dynasty governor whose
-                                    family name (丁/dīng) literally translates to "small cubes,"
-                                    making a delightful pun, as (鸡/jī) translates to "chicken"
-                                    and diced chicken serves as the main ingredient of the dish
-                                </li>
-                                <li>Spicy, sweet, sour, and savory</li>
-                                <li>Diced chicken, crunchy roasted peanuts, and a colourful mix of dried red chilies, scallions, and garlic</li>
-                                <li>One of China's most classic dishes</li>
-                            </ul>
+                            <div class="art-text">
+                                <h3>Kung Pao Chicken <i>(宫保鸡丁/gōngbǎo jīdīng)</i></h3>
+                                <ul>
+                                    <li>
+                                        <span class="fun-fact">Fun fact:</span> Named after
+                                        <em>Ding Baozhen</em>, a Qing dynasty governor whose
+                                        family name (丁/dīng) literally translates to "small cubes,"
+                                        making a delightful pun, as (鸡/jī) translates to "chicken"
+                                        and diced chicken serves as the main ingredient of the dish
+                                    </li>
+                                    <li>Spicy, sweet, sour, and savory</li>
+                                    <li>Diced chicken, crunchy roasted peanuts, and a colourful mix of dried red chilies, scallions, and garlic</li>
+                                    <li>One of China's most classic dishes</li>
+                                </ul>
+                            </div>
+                            <figure class="art-image">
+                                <img
+                                    src="./assets/kung-pao-chicken.jpg"
+                                    alt="An elegant photo of Kung Pao Chicken, well presented on a square plate"
+                                >
+                                <figcaption>
+                                    Photo by:
+                                    <a href="https://www.pexels.com/@shootsaga/" target="_blank">
+                                        Anil Sharma, Pexels
+                                    </a>
+                                </figcaption>
+                            </figure>
                         </article>
-                        <figure>
-                            <img
-                                src="./assets/kung-pao-chicken.jpg"
-                                alt="An elegant photo of Kung Pao Chicken, well presented on a square plate"
-                            >
-                            <figcaption>
-                                Photo by:
-                                <a href="https://www.pexels.com/@shootsaga/" target="_blank">
-                                    Anil Sharma, Pexels
-                                </a>
-                            </figcaption>
-                        </figure>
                     </li>
                     <li id="jiaozi">
                         <article>
-                            <h3>Jiaozi <i>(饺子/jiǎozi)</i></h3>
-                            <ul>
-                                <li><span class="fun-fact">Fun fact:</span> Deliberately shaped to resemble traditional Chinese silver ingots (元宝/yuánbǎo)</li>
-                                <li>Savory, juicy, and comforting</li>
-                                <li>Minced pork or beef, finely chopped cabbage or chives, wrapped in a thin dough skin</li>
-                                <li>The quintessential comfort food of Northern China</li>
-                            </ul>
+                            <div class="art-text">
+                                <h3>Jiaozi <i>(饺子/jiǎozi)</i></h3>
+                                <ul>
+                                    <li><span class="fun-fact">Fun fact:</span> Deliberately shaped to resemble traditional Chinese silver ingots (元宝/yuánbǎo)</li>
+                                    <li>Savory, juicy, and comforting</li>
+                                    <li>Minced pork or beef, finely chopped cabbage or chives, wrapped in a thin dough skin</li>
+                                    <li>The quintessential comfort food of Northern China</li>
+                                </ul>
+                            </div>
+                            <figure class="art-image">
+                                <img
+                                    src="./assets/jiaozi.jpg"
+                                    alt="A bright image of jiaozi, chopsticks, and sauce"
+                                >
+                                <figcaption>
+                                    Photo by:
+                                    <a href="https://pixabay.com/users/xiuqilong-1915009/" target="_blank">
+                                        @xiuqilong, Pixabay
+                                    </a>
+                                </figcaption>
+                            </figure>
                         </article>
-                        <figure>
-                            <img
-                                src="./assets/jiaozi.jpg"
-                                alt="A bright image of jiaozi, chopsticks, and sauce"
-                            >
-                            <figcaption>
-                                Photo by:
-                                <a href="https://pixabay.com/users/xiuqilong-1915009/" target="_blank">
-                                    @xiuqilong, Pixabay
-                                </a>
-                            </figcaption>
-                        </figure>
                     </li>
                 </ol>
             </section>
@@ -252,17 +264,27 @@
             <div id="attribution">
                 <p>ChinaSpace 2026</p>
                 <hr>
-                <p>
-                    Logo flag provided by:
-                    <a href="https://pixabay.com/users/openclipart-vectors-30363/" target="_blank">
-                        @OpenClipart-Vectors, Pixabay
+                <div id="source-logos">
+                    <a href="https://www.pexels.com/">
+                        <img src="assets/pexels.png" alt="The pexels logo">
                     </a>
-                </p>
-                <p>
-                    If you would like to learn more about China, check out the
-                    <!-- This one doesn't open in a new tab -->
-                    <a href="https://en.wikipedia.org/wiki/China">Wikipedia page</a>
-                </p>
+                    <a href="https://pixabay.com/">
+                        <img src="assets/pixabay.png" alt="The pixabay logo">
+                    </a>
+                </div>
+                <div class="attribution-text">
+                    <p>
+                        Logo flag provided by:
+                        <a href="https://pixabay.com/users/openclipart-vectors-30363/" target="_blank">
+                            @OpenClipart-Vectors, Pixabay
+                        </a>
+                    </p>
+                    <p>
+                        If you would like to learn more about China, check out the
+                        <!-- This one doesn't open in a new tab -->
+                        <a href="https://en.wikipedia.org/wiki/China">Wikipedia page</a>
+                    </p>
+                </div>
             </div>
         </footer>
 
