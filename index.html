@@ -14,24 +14,59 @@
         <!-- My styles -->
         <link rel="stylesheet" href="./styles.css">
 
+        <!-- Script to fix header scroll thingy -->
+        <script>
+            document.addEventListener('DOMContentLoaded', () =>
+            {
+                const header = document.querySelector('header');
+
+                function updateHeaderHeight()
+                {
+                    const padding = 20;
+                    const height = header.offsetHeight + padding;
+                    document.documentElement.style.setProperty('--header-height', `${height}px`);
+                }
+
+                window.addEventListener('resize', updateHeaderHeight);
+                updateHeaderHeight();
+            });
+        </script>
+
     </head>
 
     <body>
 
+        <!-- Just a short little summary of China -->
+        <div class="hero-image">
+            <div class="hero-splash">
+                <div class="hero-text">
+                    <p class="info-text">
+                        China, known officially as the <strong>People's Republic of China</strong>,
+                        is a vast and populous country in Eastern Asia;
+                        it has mountainous landscapes, iconic architecture,
+                        cutting-edge innovation, and one of the world's oldest living civilizations.
+                    </p>
+                    <p class="info-text">
+                        This website was created to cover a select few of the things that
+                        <strong>make China great</strong>. 
+                    </p>
+                    <a href="#places">˅</a>
+                </div>
+            </div>
+        </div>
+
         <!-- Might try to make this move with the scroll if we learn how to do that -->
-        <header id="top">
+        <header>
             <nav class="navbar">
-                <div class="logo">
+                <a class="logo" href="#">
                     <img
                         src="https://cdn.pixabay.com/photo/2013/07/13/14/16/china-162389_1280.png"
                         alt="The national flag of China"
                         height="50px"
                     >
                     <h1>ChinaSpace</h1>
-                </div>
+                </a>
                 <ul class="nav-list">
-                    <hr>
-                    <li><a href="#about">About</a></li>
                     <li class="dropdown">
                         <a href="#places">Places</a>
                         <ul class="dropdown-menu">
@@ -54,24 +89,8 @@
 
         <main>
 
-            <!-- Just a short little summary of China -->
-            <section id="about">
-                <h2>About</h2>
-                <p class="info-text">
-                    China, known officially as the <strong>People's Republic of China</strong>,
-                    is a vast and populous country in Eastern Asia;
-                    it has mountainous landscapes, iconic architecture,
-                    cutting-edge innovation, and one of the world's oldest living civilizations.
-                </p>
-                <p class="info-text">
-                    This website was created to cover a select few of the things that
-                    <strong>make China great</strong>. 
-                </p>
-            </section>
-
             <!-- My favourite places in China -->
             <section id="places">
-                <hr>
                 <h2>Places</h2>
                 <p class="info-text">
                     China is mountainous, full of rich and historic culture, and is
@@ -258,12 +277,10 @@
         </main>
 
         <footer>
-            <div id="button-container">
-                <a href="#top" class="button-link">Back to top</a>
+            <div id="foot-title-container">
+                <p>ChinaSpace</p>
             </div>
             <div id="attribution">
-                <p>ChinaSpace 2026</p>
-                <hr>
                 <div id="source-logos">
                     <a href="https://www.pexels.com/">
                         <img src="assets/pexels.png" alt="The pexels logo">
@@ -272,6 +289,7 @@
                         <img src="assets/pixabay.png" alt="The pixabay logo">
                     </a>
                 </div>
+                <hr>
                 <div class="attribution-text">
                     <p>
                         Logo flag provided by:
