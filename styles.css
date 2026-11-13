@@ -186,14 +186,14 @@ header
 .hero-text a
 {
     color: white;
-    background-color: #a0101c;
     border-radius: 0.5em;
     padding: 5px 20px;
-}
 
-.hero-text a:hover
-{
-    background-color: #8d222b;
+    /* Make it like an arrow lol */
+    font-family: ui-rounded, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
+    display: inline-block;
+    transform: scaleX(4);
+    transform-origin: center;
 }
 
 /* Main */
